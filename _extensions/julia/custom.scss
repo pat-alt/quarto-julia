@@ -4,8 +4,13 @@
     src: url("https://cdn.jsdelivr.net/gh/cormullion/juliamono/webfonts/JuliaMono-Light.woff2");
 }
 
+@font-face {
+    font-family: "Bangla MN"; 
+    src: url("https://db.onlinewebfonts.com/c/3d37467c4a9c7c1188bc3e0b7aadfa0d?family=Bangla+MN");
+}
+
 $font-family-monospace: "JuliaMono-Light" !default;
-$font-family-sans-serif: "JuliaMono-Light" !default;
+$font-family-sans-serif: "Bangla MN" !default;
 
 // Colors
 // Define the Julia colours as per https://github.com/JuliaLang/julia-logo-graphics#color-definitions

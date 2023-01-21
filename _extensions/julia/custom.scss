@@ -9,8 +9,10 @@
     src: url("https://db.onlinewebfonts.com/c/3d37467c4a9c7c1188bc3e0b7aadfa0d?family=Bangla+MN");
 }
 
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 $font-family-monospace: "JuliaMono-Light" !default;
-$font-family-sans-serif: "Bangla MN" !default;
+$font-family-sans-serif: "Roboto" !default;
 
 // Colors
 // Define the Julia colours as per https://github.com/JuliaLang/julia-logo-graphics#color-definitions
@@ -42,6 +44,10 @@ $callout-color-caution: lighten($callout-color-warning, 30%);
 $callout-color-important: $julia-red;
 
 /*-- scss:rules --*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: "JuliaMono-Light";
+}
+
 hr {
     color: $julia-blue;
 }

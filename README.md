@@ -7,3 +7,8 @@ This extension makes a number of Custom Formats for Quarto available. Simply add
 ```zsh
 quarto add pat-alt/quarto-tudelft
 ```
+
+## Usage
+
+You can find out more about this extension [here](https://www.paltmeyer.com/quarto-julia-examples/).
+

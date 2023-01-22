@@ -7,4 +7,6 @@ contributes:
     html:
       toc: true
       theme: [default, custom.scss]
+    revealjs:
+      theme: [default, custom.scss, revealjs.scss]
 

@@ -21,28 +21,28 @@ $julia-green: #389836;
 $julia-purple: #9558B2;
 $julia-red: #CB3C33;
 // Assign:
-$primary: $julia-blue !default;
+$primary: lighten($julia-blue, 50%) !default;
 $body-bg: #ffffff !default;
 $body-color: #000000 !default;
-$presentation-heading-color: $julia-blue;
-$link-color: $julia-blue;
+$presentation-heading-color: $julia-blue !default;
+$link-color: $julia-blue !default;
 // Code:
-$code-color: $julia-green;
-$dark-bg-code-color: lighten($code-color, 15%);
-$light-bg-code-color: darken($code-color, 15%);
-$code-block-border-left: lighten($code-color, 15%);
-$btn-code-copy-color: $julia-purple;
-$btn-code-copy-color-active: lighten($btn-code-copy-color, 15%);
+$code-color: $julia-green !default;
+$dark-bg-code-color: lighten($code-color, 15%) !default;
+$light-bg-code-color: darken($code-color, 15%) !default;
+$code-block-border-left: lighten($code-color, 15%) !default;
+$btn-code-copy-color: $julia-purple !default;
+$btn-code-copy-color-active: lighten($btn-code-copy-color, 15%) !default;
 // Toc:
-$toc-color: $julia-purple;
-$toc-active-border: $julia-purple;
-$toc-inactive-border: lighten($toc-active-border, 15%);
+$toc-color: $julia-purple !default;
+$toc-active-border: $julia-purple !default;
+$toc-inactive-border: lighten($toc-active-border, 15%) !default;
 // Callouts:
-$callout-color-note: $julia-blue;
-$callout-color-tip: $julia-green;
-$callout-color-warning: $julia-purple;
-$callout-color-caution: lighten($callout-color-warning, 30%);
-$callout-color-important: $julia-red;
+$callout-color-note: $julia-blue !default;
+$callout-color-tip: $julia-green !default;
+$callout-color-warning: $julia-purple !default;
+$callout-color-caution: lighten($callout-color-warning, 30%) !default;
+$callout-color-important: $julia-red !default;
 
 /*-- scss:rules --*/
 h1, h2, h3, h4, h5, h6 {

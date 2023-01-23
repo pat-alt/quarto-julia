@@ -1,0 +1,135 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Julia-themed Quarto",
+    "section": "",
+    "text": "Julia-themed Quarto.\n\n\n\nThe quarto-julia repo is a simple Quarto extension that makes a number of Julia-themed Custom Formats for Quarto available.\nOn this website you can find a number of examples that demonstrate how the extension can be used and what kind of output it can produce.\nAs you may have guessed from the design, this very website uses the quarto-julia extension."
+  },
+  {
+    "objectID": "examples/revealjs/index.html",
+    "href": "examples/revealjs/index.html",
+    "title": "Julia-themed Revealjs",
+    "section": "",
+    "text": "Tired of PowerPoint? How about using a Revealjs for your next presentation instead. You can find an example slide deck here."
+  },
+  {
+    "objectID": "examples/revealjs/example.html#details",
+    "href": "examples/revealjs/example.html#details",
+    "title": "Revealjs Presentation",
+    "section": "Details",
+    "text": "Details\nThe quarto-julia theme is based on the default theme and adds various custom formatting options."
+  },
+  {
+    "objectID": "examples/revealjs/example.html#font",
+    "href": "examples/revealjs/example.html#font",
+    "title": "Revealjs Presentation",
+    "section": "Font",
+    "text": "Font\nThe theme imports three font faces:\n\nThe JuliaMono font, which by default is used for all headers and code.\nThe Roboto font, which is used as the default font for everything else (just like on julialang.org/).\nThe Bangla MN by Muthu Nedumaran of Murasu Systems, which is closely related to the official Julia logo font.\n\nThe Bangla MN can be used to style individual elements like so:\n<p style=\"font-family: Bangla MN\">\n    Some fancy text.\n</p>\n\nSome fancy text.\n\n\n\n\n\n\n\nBangla MN Copyright\n\n\nThis Bangla MN font is copyrighted by MN, so make sure you are allowed to use it."
+  },
+  {
+    "objectID": "examples/revealjs/example.html#colors",
+    "href": "examples/revealjs/example.html#colors",
+    "title": "Revealjs Presentation",
+    "section": "Colors",
+    "text": "Colors"
+  },
+  {
+    "objectID": "examples/revealjs/example.html#code",
+    "href": "examples/revealjs/example.html#code",
+    "title": "Revealjs Presentation",
+    "section": "Code",
+    "text": "Code\nInline code looks like this print(\"hello 🌍\").\nCode chunks looks like this:\n# lifted from: https://github.com/mossr/BeautifulAlgorithms.jl/blob/master/src/neural_network.jl\n\nusing LinearAlgebra\n\nReLU(z) = max(z, 0)\n\nfunction neural_network(x, 𝐕, 𝐰, φ, g=ReLU)\n    𝐡 = map(𝐯ⱼ -> g(𝐯ⱼ ⋅ φ(x)), 𝐕)\n    𝐰 ⋅ 𝐡\nend"
+  },
+  {
+    "objectID": "examples/revealjs/example.html#math",
+    "href": "examples/revealjs/example.html#math",
+    "title": "Revealjs Presentation",
+    "section": "Math",
+    "text": "Math\nLet \\(t\\in\\{0,1\\}\\) denote the target label, \\(M\\) the model (classifier) and \\({x}^{\\prime} \\in \\mathbb{R}^D\\) the vector of counterfactual features. In order to generate recourse the GenericGenerator optimizes the following objective function through steepest descent\n\\[\nx\\prime = \\arg \\min_{x\\prime}  \\ell(M(x\\prime),t) + \\lambda h(x\\prime)\n\\]\nwhere \\(\\ell\\) denotes some loss function targeting the deviation between the target label and the predicted label and \\(h(\\cdot)\\) is a complexity penalty generally addressing the realism or cost of the proposed counterfactual."
+  },
+  {
+    "objectID": "examples/revealjs/example.html#callouts",
+    "href": "examples/revealjs/example.html#callouts",
+    "title": "Revealjs Presentation",
+    "section": "Callouts",
+    "text": "Callouts\n\n\n\n\n\n\nNote\n\n\nThis is a note in julia_blue.\n\n\n\n\n\n\n\n\n\nTip\n\n\nThis is a tip in julia_green.\n\n\n\n\n\n\n\n\n\nCaution\n\n\nThis is a caution callout in julia_purple.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nThis is a warning in julia_purple.\n\n\n\n\n\n\n\n\n\nImportant\n\n\nThis is an important callout in julia_red."
+  },
+  {
+    "objectID": "examples/documenter/index.html",
+    "href": "examples/documenter/index.html",
+    "title": "Quarto and Documenter.jl",
+    "section": "",
+    "text": "Since Documenter.jl takes Markdown documents as input, you can use Quarto with Documenter.jl for package documentation. To make this as painless as possible, the documenterjl-commonmark format specifies a few relevant output option."
+  },
+  {
+    "objectID": "examples/documenter/index.html#usage",
+    "href": "examples/documenter/index.html#usage",
+    "title": "Quarto and Documenter.jl",
+    "section": "Usage",
+    "text": "Usage\nTBD"
+  },
+  {
+    "objectID": "examples/article/index.html",
+    "href": "examples/article/index.html",
+    "title": "Julia-themed Articles",
+    "section": "",
+    "text": "This page you’re on now is a citeable article."
+  },
+  {
+    "objectID": "examples/article/index.html#introduction",
+    "href": "examples/article/index.html#introduction",
+    "title": "Julia-themed Articles",
+    "section": "Introduction",
+    "text": "Introduction\nThis Quarto notebook generates Julia-themed output."
+  },
+  {
+    "objectID": "examples/article/index.html#details",
+    "href": "examples/article/index.html#details",
+    "title": "Julia-themed Articles",
+    "section": "Details",
+    "text": "Details\nThe quarto-julia theme is based on the default theme and adds various custom formatting options."
+  },
+  {
+    "objectID": "examples/article/index.html#font",
+    "href": "examples/article/index.html#font",
+    "title": "Julia-themed Articles",
+    "section": "Font",
+    "text": "Font\nThe theme imports three font faces:\n\nThe JuliaMono font, which by default is used for all headers and code.\nThe Roboto font, which is used as the default font for everything else (just like on julialang.org/).\nThe Bangla MN by Muthu Nedumaran of Murasu Systems, which is closely related to the official Julia logo font.\n\nThe Bangla MN can be used to style individual elements like so:\n<p style=\"font-family: Bangla MN\">\n    Some fancy text.\n</p>\n\nSome fancy text.\n\n\n\n\n\n\n\nBangla MN Copyright\n\n\n\nThis Bangla MN font is copyrighted by MN, so make sure you are allowed to use it."
+  },
+  {
+    "objectID": "examples/article/index.html#colors",
+    "href": "examples/article/index.html#colors",
+    "title": "Julia-themed Articles",
+    "section": "Colors",
+    "text": "Colors"
+  },
+  {
+    "objectID": "examples/article/index.html#code",
+    "href": "examples/article/index.html#code",
+    "title": "Julia-themed Articles",
+    "section": "Code",
+    "text": "Code\nInline code looks like this print(\"hello 🌍\").\nCode chunks looks like this:\n# lifted from: https://github.com/mossr/BeautifulAlgorithms.jl/blob/master/src/neural_network.jl\n\nusing LinearAlgebra\n\nReLU(z) = max(z, 0)\n\nfunction neural_network(x, 𝐕, 𝐰, φ, g=ReLU)\n    𝐡 = map(𝐯ⱼ -> g(𝐯ⱼ ⋅ φ(x)), 𝐕)\n    𝐰 ⋅ 𝐡\nend"
+  },
+  {
+    "objectID": "examples/article/index.html#math",
+    "href": "examples/article/index.html#math",
+    "title": "Julia-themed Articles",
+    "section": "Math",
+    "text": "Math\nLet \\(t\\in\\{0,1\\}\\) denote the target label, \\(M\\) the model (classifier) and \\({x}^{\\prime} \\in \\mathbb{R}^D\\) the vector of counterfactual features. In order to generate recourse the GenericGenerator optimizes the following objective function through steepest descent\n\\[\nx\\prime = \\arg \\min_{x\\prime}  \\ell(M(x\\prime),t) + \\lambda h(x\\prime)\n\\]\nwhere \\(\\ell\\) denotes some loss function targeting the deviation between the target label and the predicted label and \\(h(\\cdot)\\) is a complexity penalty generally addressing the realism or cost of the proposed counterfactual."
+  },
+  {
+    "objectID": "examples/article/index.html#callouts",
+    "href": "examples/article/index.html#callouts",
+    "title": "Julia-themed Articles",
+    "section": "Callouts",
+    "text": "Callouts\n\n\n\n\n\n\nNote\n\n\n\nThis is a note in julia_blue.\n\n\n\n\n\n\n\n\nTip\n\n\n\nThis is a tip in julia_green.\n\n\n\n\n\n\n\n\nCaution\n\n\n\nThis is a caution callout in julia_purple.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nThis is a warning in julia_purple.\n\n\n\n\n\n\n\n\nImportant\n\n\n\nThis is an important callout in julia_red."
+  },
+  {
+    "objectID": "examples/juliacon/index.html",
+    "href": "examples/juliacon/index.html",
+    "title": "JuliaCon Proceedings",
+    "section": "",
+    "text": "TBD"
+  }
+]

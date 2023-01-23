@@ -1,0 +1,14 @@
+---
+title: Julia-themed Articles
+subtitle: Julia-themed Quarto
+author: Patrick Altmeyer
+date: today
+---
+
+This page you're on now is a citeable article.
+
+## Introduction
+
+This Quarto notebook generates Julia-themed output.
+
+{{< include ../_content.qmd >}}

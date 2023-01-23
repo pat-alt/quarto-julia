@@ -1,13 +1,6 @@
 /*-- scss:rules --*/
 .reveal {
 
-    // Callouts:
-    $callout-color-note: $julia-blue !important;
-    $callout-color-tip: $julia-green !important;
-    $callout-color-warning: $julia-purple !important;
-    $callout-color-caution: lighten($callout-color-warning, 30%) !important;
-    $callout-color-important: $julia-red !important;
-
     h1, h2, h3, h4, h5, h6 {
         font-family: "JuliaMono-Light";
     }

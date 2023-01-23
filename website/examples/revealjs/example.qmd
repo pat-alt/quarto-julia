@@ -1,0 +1,12 @@
+---
+title: Revealjs Presentation
+subtitle: Julia-themed Quarto
+format:
+  julia-revealjs: 
+    scrollable: true
+    smaller: true
+author: pat-alt
+date: last-modified
+---
+
+{{< include ../_content.qmd >}}

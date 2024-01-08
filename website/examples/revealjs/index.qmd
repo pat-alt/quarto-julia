@@ -1,7 +1,0 @@
----
-title: Julia-themed Revealjs 
----
-
-## Introduction
-
-Tired of PowerPoint? How about using a Revealjs for your next presentation instead. You can find an example slide deck [here](example.qmd){target="_blank"}.

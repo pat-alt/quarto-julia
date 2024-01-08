@@ -10,7 +10,7 @@ quarto add pat-alt/quarto-julia
 
 ## Usage
 
-You can find out more about this extension on this designated [website](https://www.paltmeyer.com/quarto-julia/). 
+You can find out more about this extension on this designated [website](https://www.paltmeyer.com/quarto-julia-website/). 
 
 > By the way ... 
 

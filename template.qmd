@@ -16,7 +16,7 @@ The theme is based on the `default` theme and adds various custom formatting opt
 
 ### Font
 
-The theme uses the [JuliaMono](https://juliamono.netlify.app/) font.
+The theme uses the [JuliaMono](https://juliamono.netlify.app/) font for monospace text and code. For all other text, the theme uses the [Barlow](https://tribby.com/fonts/barlow/) font.
 
 ### Colors
 

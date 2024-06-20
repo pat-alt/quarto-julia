@@ -2,9 +2,12 @@
 
 This Quarto notebook generates Julia-themed output. The theme is based on the `default` Quarto theme and adds various custom formatting options.
 
-## Fonts
+## Fonts {.smaller}
 
-The theme uses the [JuliaMono](https://juliamono.netlify.app/) font for `monospace` text and `code`. For headers and blockquotes, the theme uses the [Barlow](https://tribby.com/fonts/barlow/){style="font-family: Barlow;"} font. For all other text, the theme uses the [Roboto](https://fonts.google.com/specimen/Roboto){style="font-family: Roboto;"} font, just like the Julia [website](https://julialang.org/). Also available is the [Bangla MN](https://www.onlinewebfonts.com/download/3d37467c4a9c7c1188bc3e0b7aadfa0d){style="font-family: Bangla MN;"} by Muthu Nedumaran of [Murasu Systems](http://murasu.com/), which is closely related to the official Julia [logo font](https://github.com/JuliaLang/julia-logo-graphics#about-the-font).
+1. The theme uses the [JuliaMono](https://juliamono.netlify.app/) font for `monospace` text and `code`.
+2. For headers and blockquotes, the theme uses the [Barlow](https://tribby.com/fonts/barlow/){style="font-family: Barlow;"} font. 
+3. For all other text, the theme uses the [Roboto](https://fonts.google.com/specimen/Roboto){style="font-family: Roboto;"} font, just like the Julia [website](https://julialang.org/). 
+4. Also available is the [Bangla MN](https://www.onlinewebfonts.com/download/3d37467c4a9c7c1188bc3e0b7aadfa0d){style="font-family: Bangla MN;"} by Muthu Nedumaran of [Murasu Systems](http://murasu.com/), which is closely related to the official Julia [logo font](https://github.com/JuliaLang/julia-logo-graphics#about-the-font).
 
 ::: {.callout-caution}
 

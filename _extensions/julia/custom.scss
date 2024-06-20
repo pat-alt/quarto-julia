@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 $font-family-monospace: "JuliaMono-Light" !default;
-$font-family-sans-serif: "Barlow" !default;
+$font-family-sans-serif: "Roboto" !default;
 
 // Colors
 // Define the Julia colours as per https://github.com/JuliaLang/julia-logo-graphics#color-definitions
@@ -36,8 +36,8 @@ $toc-inactive-border: lighten($toc-active-border, 15%) !default;
 // Callouts:
 $callout-color-note: $julia-blue !default;
 $callout-color-tip: $julia-green !default;
-$callout-color-warning: $julia-purple !default;
-$callout-color-caution: lighten($callout-color-warning, 30%) !default;
+$callout-color-caution: $julia-purple !default;
+$callout-color-warning: lighten($callout-color-caution, 30%) !default;
 $callout-color-important: $julia-red !default;
 
 /*-- scss:rules --*/
@@ -47,4 +47,23 @@ h1, h2, h3, h4, h5, h6 {
 
 hr {
     color: $julia-blue;
+}
+
+blockquote {
+    color: $julia-blue;
+    border-left: .25rem solid $julia-blue;
+}
+
+// Classes for Julia colors:
+.julia-purple {
+    color: $julia-purple;
+}
+.julia-blue {
+    color: $julia-blue;
+}
+.julia-green {
+    color: $julia-green;
+}
+.julia-red {
+    color: $julia-red;
 }

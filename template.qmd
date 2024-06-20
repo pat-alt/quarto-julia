@@ -1,76 +1,14 @@
 ---
 title: Julia-themed Quarto
 format:
+  julia-revealjs: 
+    scrollable: true
   julia-html: default
 author: pat-alt
 date: last-modified
 ---
 
-## Introduction
-
-This Quarto notebook generates Julia-themed output.
-
-## Details
-
-The theme is based on the `default` theme and adds various custom formatting options.
-
-### Font
-
-The theme uses the [JuliaMono](https://juliamono.netlify.app/) font for monospace text and code. For all other text, the theme uses the [Barlow](https://tribby.com/fonts/barlow/) font.
-
-### Colors
-
-#### Code
-
-Inline code looks like this `print("hello 🌍")`.
-
-<hr>
-
-```{.julia}
-print("hello 🌍")
-```
-
-#### Callouts
-
-::: {.callout-note}
-
-# Note
-
-This is a note in `julia_blue`.
-
-:::
-
-::: {.callout-tip}
-
-# Tip
-
-This is a tip in `julia_green`.
-
-:::
-
-::: {.callout-caution}
-
-# Caution
-
-This is a caution callout in `julia_purple`.
-
-:::
-
-::: {.callout-warning}
-
-# Warning
-
-This is a warning in `julia_purple`.
-
-:::
-
-::: {.callout-important}
-
-# Important
-
-This is an important callout in `julia_red`.
-
-:::
+{{< include _content.qmd >}}
 
 
 

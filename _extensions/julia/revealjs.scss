@@ -1,11 +1,15 @@
 /*-- scss:rules --*/
 .reveal {
-    
-    hr {
-        color: $julia-blue;
-    }
 
     .progress {
         color: $code-color;
     }
+
+    blockquote {
+        color: lighten($julia-blue, 15%);
+        border-left: .25rem solid $julia-blue;
+        background-color: lighten($julia-blue, 40%);
+        font-family: "Barlow";
+    }
+
 }

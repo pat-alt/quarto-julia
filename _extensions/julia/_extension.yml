@@ -9,5 +9,7 @@ contributes:
       theme: [default, custom.scss]
     revealjs:
       theme: [default, custom.scss, revealjs.scss]
+      include-in-header: revealjs_header.html
+      callout-icon: false
 
 

@@ -1,0 +1,90 @@
+# Introduction
+
+This Quarto notebook generates Julia-themed output. The theme is based on the `default` Quarto theme and adds various custom formatting options.
+
+## Fonts
+
+The theme uses the [JuliaMono](https://juliamono.netlify.app/) font for `monospace` text and `code`. For headers and blockquotes, the theme uses the [Barlow](https://tribby.com/fonts/barlow/){style="font-family: Barlow;"} font. For all other text, the theme uses the [Roboto](https://fonts.google.com/specimen/Roboto){style="font-family: Roboto;"} font, just like the Julia [website](https://julialang.org/). Also available is the [Bangla MN](https://www.onlinewebfonts.com/download/3d37467c4a9c7c1188bc3e0b7aadfa0d){style="font-family: Bangla MN;"} by Muthu Nedumaran of [Murasu Systems](http://murasu.com/), which is closely related to the official Julia [logo font](https://github.com/JuliaLang/julia-logo-graphics#about-the-font).
+
+::: {.callout-caution}
+
+## Bangla MN Copyright
+
+This Bangla MN font is copyrighted by MN, so make sure you are allowed to use it. 
+:::
+
+## Code
+
+Inline code looks like this `print("hello 🌍")`. Code blocks look like this (Revealjs not affected):
+
+```{.julia}
+using CounterfactualExplanations, TaijaData
+
+# Data and Classifier:
+counterfactual_data = CounterfactualData(load_linearly_separable()...)
+M = fit_model(counterfactual_data, :Linear)
+
+# Select random sample:
+target = 2
+factual = 1
+chosen = rand(findall(predict_label(M, counterfactual_data) .== factual))
+x = select_factual(counterfactual_data, chosen)
+
+# Counterfactual search:
+generator = GenericGenerator()
+ce = generate_counterfactual(x, target, counterfactual_data, M, generator)
+```
+
+## Callouts {.smaller}
+
+::: {.callout-note}
+
+# Note
+
+This is a note in [julia_blue]{class="julia-blue"}. Note that for Revealjs, icons are deactivated for callouts by default.
+
+:::
+
+::: {.callout-tip}
+
+# Tip
+
+This is a tip in [julia_green]{class="julia-green"}.
+
+:::
+
+::: {.callout-caution}
+
+# Caution
+
+This is a caution callout in [julia_purple]{class="julia-purple"}.
+
+:::
+
+::: {.callout-warning}
+
+# Warning
+
+This is a warning in [julia_purple]{class="julia-purple"} (lighter).
+
+:::
+
+::: {.callout-important}
+
+# Important
+
+This is an important callout in [julia_red]{class="julia-red"}.
+
+:::
+
+## Maths {.smaller}
+
+> Of course, Quarto supports LaTeX maths, for which we use default settings.
+
+Let $t\in\{0,1\}$ denote the target label, $M$ the model (classifier) and ${x}^{\prime} \in \mathbb{R}^D$ the vector of counterfactual features. In order to generate recourse the `GenericGenerator` optimizes the following objective function through steepest descent
+
+$$
+x\prime = \arg \min_{x\prime}  \ell(M(x\prime),t) + \lambda h(x\prime)
+$$
+
+where $\ell$ denotes some loss function targeting the deviation between the target label and the predicted label and $h(\cdot)$ is a complexity penalty generally addressing the *realism* or *cost* of the proposed counterfactual. 

@@ -50,8 +50,10 @@ hr {
 }
 
 blockquote {
-    color: $julia-blue;
+    color: lighten($julia-blue, 15%);
     border-left: .25rem solid $julia-blue;
+    background-color: lighten($julia-blue, 40%);
+    font-family: "Barlow";
 }
 
 // Classes for Julia colors:

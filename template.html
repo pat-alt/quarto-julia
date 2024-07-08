@@ -441,7 +441,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-image="_extensions/julia/qrcode.png" data-background-position="bottom right" data-background-size="10%" class="quarto-title-block center">
   <h1 class="title">Julia-themed Quarto</h1>
 
 <div class="quarto-title-authors">
@@ -560,6 +560,12 @@ pat-alt
 x\prime = \arg \min_{x\prime}  \ell(M(x\prime),t) + \lambda h(x\prime)
 \]</span></p>
 <p>where <span class="math inline">\(\ell\)</span> denotes some loss function targeting the deviation between the target label and the predicted label and <span class="math inline">\(h(\cdot)\)</span> is a complexity penalty generally addressing the <em>realism</em> or <em>cost</em> of the proposed counterfactual.</p>
+</section>
+<section id="qr-code-on-title-slide" class="slide level2">
+<h2>QR Code on Title Slide</h2>
+<p>To add a custom QR code to the title slide, just specify the path to the image in the front matter of the document:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href=""></a><span class="fu">title-slide-attributes</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href=""></a><span class="at">    </span><span class="fu">data-background-image</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">path-to-image</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 

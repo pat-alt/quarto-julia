@@ -11,5 +11,8 @@ contributes:
       theme: [default, custom.scss, revealjs.scss]
       include-in-header: revealjs_header.html
       callout-icon: false
-
+      title-slide-attributes:
+        data-background-image: qrcode.png
+        data-background-position: bottom right
+        data-background-size: 10% 
 

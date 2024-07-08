@@ -91,3 +91,12 @@ x\prime = \arg \min_{x\prime}  \ell(M(x\prime),t) + \lambda h(x\prime)
 $$
 
 where $\ell$ denotes some loss function targeting the deviation between the target label and the predicted label and $h(\cdot)$ is a complexity penalty generally addressing the *realism* or *cost* of the proposed counterfactual. 
+
+## QR Code on Title Slide 
+
+To add a custom QR code to the title slide, just specify the path to the image in the front matter of the document:
+
+```yaml
+title-slide-attributes:
+    data-background-image: [path-to-image]
+```

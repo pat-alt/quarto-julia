@@ -3,6 +3,8 @@ title: Julia-themed Quarto
 format:
   julia-revealjs: 
     scrollable: true
+    title-slide-attributes:
+      data-background-image: /www/qrcode.png
   julia-html: default
 author: pat-alt
 date: last-modified

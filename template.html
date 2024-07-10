@@ -30,6 +30,7 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
     /* CSS for syntax highlighting */
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { line-height: 1.25; }
@@ -441,7 +442,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="/www/qrcode.png" data-background-position="bottom right" data-background-size="10%" class="quarto-title-block center">
+<section id="title-slide" data-background-image="/www/qrcode.png" data-background-position="bottom right" data-background-size="20%" class="quarto-title-block center">
   <h1 class="title">Julia-themed Quarto</h1>
 
 <div class="quarto-title-authors">
@@ -555,11 +556,9 @@ pat-alt
 <blockquote>
 <p>Of course, Quarto supports LaTeX maths, for which we use default settings.</p>
 </blockquote>
-<p>Let <span class="math inline">\(t\in\{0,1\}\)</span> denote the target label, <span class="math inline">\(M\)</span> the model (classifier) and <span class="math inline">\({x}^{\prime} \in \mathbb{R}^D\)</span> the vector of counterfactual features. In order to generate recourse the <code>GenericGenerator</code> optimizes the following objective function through steepest descent</p>
-<p><span class="math display">\[
-x\prime = \arg \min_{x\prime}  \ell(M(x\prime),t) + \lambda h(x\prime)
-\]</span></p>
-<p>where <span class="math inline">\(\ell\)</span> denotes some loss function targeting the deviation between the target label and the predicted label and <span class="math inline">\(h(\cdot)\)</span> is a complexity penalty generally addressing the <em>realism</em> or <em>cost</em> of the proposed counterfactual.</p>
+<p>Let <img style="vertical-align:middle" src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20t%5Cin%5C%7B0%2C1%5C%7D" alt="t\in\{0,1\}" title="t\in\{0,1\}" class="math inline"> denote the target label, <img style="vertical-align:middle" src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20M" alt="M" title="M" class="math inline"> the model (classifier) and <img style="vertical-align:middle" src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20%7Bx%7D%5E%7B%5Cprime%7D%20%5Cin%20%5Cmathbb%7BR%7D%5ED" alt="{x}^{\prime} \in \mathbb{R}^D" title="{x}^{\prime} \in \mathbb{R}^D" class="math inline"> the vector of counterfactual features. In order to generate recourse the <code>GenericGenerator</code> optimizes the following objective function through steepest descent</p>
+<p><img style="vertical-align:middle" src="https://latex.codecogs.com/svg.latex?%5Cdisplaystyle%20x%5Cprime%20%3D%20%5Carg%20%5Cmin_%7Bx%5Cprime%7D%20%20%5Cell%28M%28x%5Cprime%29%2Ct%29%20%2B%20%5Clambda%20h%28x%5Cprime%29" alt="x\prime = \arg \min_{x\prime}  \ell(M(x\prime),t) + \lambda h(x\prime)" title="x\prime = \arg \min_{x\prime}  \ell(M(x\prime),t) + \lambda h(x\prime)" class="math display"></p>
+<p>where <img style="vertical-align:middle" src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20%5Cell" alt="\ell" title="\ell" class="math inline"> denotes some loss function targeting the deviation between the target label and the predicted label and <img style="vertical-align:middle" src="https://latex.codecogs.com/svg.latex?%5Ctextstyle%20h%28%5Ccdot%29" alt="h(\cdot)" title="h(\cdot)" class="math inline"> is a complexity penalty generally addressing the <em>realism</em> or <em>cost</em> of the proposed counterfactual.</p>
 </section>
 <section id="qr-code-on-title-slide" class="slide level2">
 <h2>QR Code on Title Slide</h2>
@@ -588,7 +587,6 @@ x\prime = \arg \min_{x\prime}  \ell(M(x\prime),t) + \lambda h(x\prime)
   <script src="template_files/libs/revealjs/plugin/notes/notes.js"></script>
   <script src="template_files/libs/revealjs/plugin/search/search.js"></script>
   <script src="template_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="template_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -755,27 +753,9 @@ x\prime = \arg \min_{x\prime}  \ell(M(x\prime),t) + \lambda h(x\prime)
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
-        math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
         // reveal.js plugins
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
-          RevealMath,
           RevealNotes,
           RevealSearch,
           RevealZoom

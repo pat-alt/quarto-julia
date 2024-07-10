@@ -14,5 +14,5 @@ contributes:
       title-slide-attributes:
         data-background-position: bottom right
         data-background-size: 20% 
-      html-math-method: webtex
+      html-math-method: mathjax
 
